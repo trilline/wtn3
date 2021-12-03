@@ -2,14 +2,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Fixing random state for reproducibility
-np.random.seed(19680801)
 
 
 fig = plt.figure()
 ax = fig.add_subplot(projection='3d')
 
-colors = ['r', 'g', 'b', 'y']
-yticks = [3, 2, 1, 0]
+colors = ['y', 'r', 'y', 'b', 'g']
+yticks = [4, 3, 2, 1, 0]
 for c, k in zip(colors, yticks):
     # Generate the random data for the y=k 'layer'.
     xs = np.arange(20)
